@@ -1,5 +1,4 @@
 # STI
-sti research repo
-test file 
-machine learning
-test programming
+- CTA
+- CEA
+- TRIPLE
