@@ -54,7 +54,7 @@ optional arguments:
 
 ## CTA prediction
 
-## Usage
+### Usage
 
 ```console
 $ python predict_name_column.py
