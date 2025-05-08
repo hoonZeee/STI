@@ -63,6 +63,19 @@ optional arguments:
 
 ### Usage
 
+
+
+
+
+
+
+### 개발일지
+
+5/8(목)
+- 모델 7-class 분류기로 fix ( 모델을 같은  label_map 과 classifier 구조화 )
+- 전이 학습용 모델 고도화 ( 최적의 eppoch 설정)
+- 
+
 ```console
 $ python predict_name_column.py
 ```
