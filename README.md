@@ -5,11 +5,50 @@
 이 모델은 의미추론, 개체연결, 관계주석, 삼항 구조를 통한 지식그래프 구축 모델입니다.
 
 
-
 ![STI_diagram](https://github.com/hoonZeee/STI/blob/main/STI_diagram.jpg)
 
 
+## STI 개발 진행 링크
 
+
+- [Jihoon_STI_Research](https://github.com/hoonZeee/STI)
+
+
+## Directory
+
+```console
+KorSTI/
+├── data/
+│   ├── trained_mixed_name.csv
+│   ├── trained_mixed_activist.csv
+│   ├── trained_mixed_year.csv
+│   ├── trained_mixed_judgement.csv
+│   ├── trained_mixed_event.csv
+│   ├── informal_file.csv
+│   └── formal.csv
+│
+├── model/
+│   ├── pretrainedModel.pt
+│   └── custom_trained.pt
+│
+├── notebooks/
+│   └── training_KoBERT.ipynb
+│
+├── scripts/
+│   ├── extract.py
+│   ├── CTA_trained.py
+│   ├── CEA.py
+│   ├── triple_generator.py
+│
+├── outputs/
+│   ├── CTA_predict.csv
+│   ├── CEA_result.csv
+│   └── triple_output.csv
+│
+├── knowledge_graph/
+│
+└── README.md
+```
 
 ## Installation
 
@@ -20,7 +59,7 @@ $ pip install -r requirements.txt
 ```
 
 
-## Data Preparation
+## CTA Data Preparation
 
 
 ```console
@@ -64,17 +103,10 @@ optional arguments:
 ### Usage
 
 
+## Text_ Embedding
 
+- 파인튜닝된 pt파일을 활용하여 text_embedding 예측수행
 
-
-
-
-### 개발일지
-
-5/8(목)
-- 모델 7-class 분류기로 fix ( 모델을 같은  label_map 과 classifier 구조화 )
-- 전이 학습용 모델 고도화 ( 최적의 eppoch 설정)
-- 
 
 ```console
 $ python predict_name_column.py
